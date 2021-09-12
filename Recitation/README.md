@@ -2,8 +2,7 @@
 
 ## Loop over a Matrix: "Let's Loop" 
 
-...
-
+```
 ttt <- matrix(c("O", NA, "X", NA, "O", NA, "X", "O", "X"), nrow = 3, ncol = 3)
 ttt
 
@@ -16,10 +15,11 @@ for (row in 1:nrow(ttt)) {
   }
 }
 
-...
+```
 
 ## Loop over a Matrix: Combine both Loop and Ifs
 
+```
 Students = c("Aida", "Bruce", "Cecilia", "Daniel")
 Majors = c("PoliSci", "Biology", "Econ", "SocPol")
 
@@ -35,16 +35,21 @@ for ( x in 1:length(Students) ) {
   }
 }
 
+```
+
 ## Functions: Create a Celsius to Fahrenheit Converter
 
+```
 convertCF = function(x, y) {
   return((x*1.8) + 32)
 } 
 
 convertCF(20)
+```
 
 ## Functions: More on Your Converter
 
+```
 TempinAD = c(32,32,30,31.5,29,30,35)
 
 convertCF (TempinAD)
@@ -52,4 +57,4 @@ convertCF (TempinAD)
 for ( a in (TempinAD) ) {
   print(convertCF(a))
 }
-
+```
