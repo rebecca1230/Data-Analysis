@@ -2,6 +2,8 @@
 
 ## Loop over a Matrix: "Let's Loop" 
 
+...
+
 ttt <- matrix(c("O", NA, "X", NA, "O", NA, "X", "O", "X"), nrow = 3, ncol = 3)
 ttt
 
@@ -13,6 +15,8 @@ for (row in 1:nrow(ttt)) {
     print(paste("On row", row,  "and column", column, "the board contains", ttt[row, column] ) )
   }
 }
+
+...
 
 ## Loop over a Matrix: Combine both Loop and Ifs
 
