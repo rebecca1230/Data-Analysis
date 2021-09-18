@@ -15,6 +15,8 @@ Ways of subsetting:
 1. By ID
 2. By name
 + england = showing the entire data set. 
-+ england[,"visitor"]
++ england[ "row name" ,"column name"]
++ england[,] : everything
++ england[row,] some rows and all columns for those rows.
 4. By logical (the most important way)
 
