@@ -46,4 +46,3 @@ Ways of subsetting:
 ### Extra Notes
 1. mean(1,2,3) = 1 ; mean(c(1,2,3)) = 2
 2. A list is TRUE if all the values are TRUE. A list is FALSE if all are TRUE but one is FALSE
-3. 
