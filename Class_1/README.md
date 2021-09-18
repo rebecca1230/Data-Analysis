@@ -33,28 +33,26 @@
 + 1111222233334444 + 0123012301230123 = up + bottom = 1234234534564567
 ## Objects: Create values 
 ### One object
-1. <Script> name = "Aaron" 
+1. < Script > name = "Aaron" 
 2. Highlight and "Run"
-3. <Environment> Appears name means the value "Aaron"
+3. < Environment > Appears: name = the value "Aaron"
 ### Two objects
-1. <Script> names = c("aaron","omer")  
+1. < Script > names = c("aaron","omer")  
 << A vector/objects with 2 objects inside it. 
 2. Highlight and "Run"
-3. <Environment> Appears: chr [1:2] "aaron" "omer" 
-<< chr means character object 
-   int means interger object
+3. < Environment > Appears: chr [1:2] "aaron" "omer" 
++ chr means character object 
++ int means interger object
 ### Integer and character 
 1 + 1 = 2
 "1" + "1" = Error
 ### Matrix 
 our.matrix = matrix(data = 1:25, nrow=5, ncol=5, byrow=TRUE)
-<<< Left to right; 5 rows. 
++ Left to right; 5 rows. 
 our.matrix = matrix(data = 1:25, nrow=5, ncol=5, byrow=FALSE)
-<<< Up to down; 5 columns. 
++ Up to down; 5 columns. 
 class(our.matrix) = "matrix" 
 
 our.matrix = as.data.frame(our.matrix)
-
-<<< The columns have names.
-
++ The columns have names.
 class(our.matrix) = "data.frame"
