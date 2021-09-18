@@ -21,7 +21,18 @@
    seq(2,5) = 2:5 = seq(2,5,by=1)
 6. seq(2,5,by=0.5) = 2, 2.5, 3, 3.5, 4, 4.5, 5
 7. ?seq : asking the bottom-right block what this function is.
-
+   seq(from = 2, to = 11, by = 0.25
+### How to generate 111222333444
+1. c(1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4)
+2. c(rep(1,3), rep(2,3), rep(3,3), rep(4,3)) 
+3. rep(x=seq(1,4), each=4)
+4. rep(1:4 , each=4)
+5. c(rep(1:4, each=4))
+>> c(rep(1:4, each=4), rep(1:4, each=4)) = 11112222333344441111222233334444
+### How to generate 1234234534564567
+1. c(1:4,2:5,3:6,4:7)
+2. rep(1:4,each=4 + rep(0:3))
+3. rep(1:4,4) + rep(rep(0:3),4)
 ``` 
 
 ```
