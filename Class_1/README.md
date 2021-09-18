@@ -1,9 +1,9 @@
 # Class 1 Part 1
 ## R Working Blocks
 1. < UP-LEFT > Scripte : Record and save what we type. 
-2. <BOTTOM-LEFT> Console/Terminal : Where we tell the computer to do stuff.
-3. <UP-RIGHT> Environment : Save stuff we want to use later. 
-4. <BOTTOM-RIGHT> Create graphs.
+2. < BOTTOM-LEFT > Console/Terminal : Where we tell the computer to do stuff.
+3. < UP-RIGHT > Environment : Save stuff we want to use later. 
+4. < BOTTOM-RIGHT > Create graphs.
 ## Primitives
 1. (#) Comment
 2. (asterisk) multiplication 
