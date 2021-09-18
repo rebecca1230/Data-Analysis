@@ -59,5 +59,5 @@ our.matrix = matrix(data = 1:25, nrow=5, ncol=5, byrow=FALSE)
 class(our.matrix) = "matrix" 
 
 our.matrix = as.data.frame(our.matrix)
-<<< The columns have names.
+=== The columns have names.
 class(our.matrix) = "data.frame"
