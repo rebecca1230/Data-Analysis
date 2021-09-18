@@ -31,4 +31,19 @@ Ways of subsetting:
 + england[,"home"] == "Everton"
 + england[ england[,"home"] == "Everton" , "hgoal" ]
 + mean(england[ england[,"home"] == "Everton" , "hgoal" ])
-
++ mean(england[england[,"visitor"] == "Everton" , "vgoal"])
+### How many games played after 1900 had more than 10 total goal? 
+1. Games after 1900
+2. Games totals > 10
++ england[,"season"] > 1900
++ sum(england[,"Season"] > 1900)
++ sum(england[,"totgoal"] > 10)
++ sum(england[,"Season"] > 1900 & england[,"totgoal"] > 10)
+### First Plotting
+1. plot(x=1:10,y=5:14)
+2. plot(x = england[,"Season"], y = england[,"totgoal"])
+3. *barplot(dat$totgoal)*
+### Extra Notes
+1. mean(1,2,3) = 1 ; mean(c(1,2,3)) = 2
+2. A list is TRUE if all the values are TRUE. A list is FALSE if all are TRUE but one is FALSE
+3. 
