@@ -38,7 +38,7 @@
 3. < Environment > Appears: name = the value "Aaron"
 ### Two objects
 1. < Script > names = c("aaron","omer")  
-<< A vector/objects with 2 objects inside it. 
++ A vector/objects with 2 objects inside it. 
 2. Highlight and "Run"
 3. < Environment > Appears: chr [1:2] "aaron" "omer" 
 + chr means character object 
