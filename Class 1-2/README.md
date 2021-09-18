@@ -14,5 +14,7 @@
 Ways of subsetting: 
 1. By ID
 2. By name
-3. By logical (the most important way)
++ england = showing the entire data set. 
++ england[,"visitor"]
+4. By logical (the most important way)
 
