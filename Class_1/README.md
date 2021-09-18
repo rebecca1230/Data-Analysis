@@ -44,8 +44,8 @@
 + chr means character object 
 + int means interger object
 ### Integer and character 
-1 + 1 = 2
-"1" + "1" = Error
+1. 1 + 1 = 2
+2. "1" + "1" = Error
 ### Matrix 
 1. our.matrix = matrix(data = 1:25, nrow=5, ncol=5, byrow=TRUE)
 2. Left to right; 5 rows. 
