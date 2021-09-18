@@ -53,11 +53,11 @@
 "1" + "1" = Error
 ### Matrix 
 our.matrix = matrix(data = 1:25, nrow=5, ncol=5, byrow=TRUE)
->>> Left to right; 5 rows. 
+>> Left to right; 5 rows. 
 our.matrix = matrix(data = 1:25, nrow=5, ncol=5, byrow=FALSE)
->>> Up to down; 5 columns. 
+>> Up to down; 5 columns. 
 class(our.matrix) = "matrix" 
 
 our.matrix = as.data.frame(our.matrix)
->>> The columns have names.
+>> The columns have names.
 class(our.matrix) = "data.frame"
