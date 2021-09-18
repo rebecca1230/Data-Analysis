@@ -12,11 +12,23 @@
 5. england = england : Craete an object named England(the left england), and assign that object to a data already existed: England(the right engalnd).
 ## Subsetting
 Ways of subsetting: 
-1. By ID
-2. By name
+1. By ID (Which row/column in terms of number.)
+2. By name (The name of row/column)
 + england = showing the entire data set. 
 + england[ "row name" ,"column name"]
-+ england[,] : everything
-+ england[row,] some rows and all columns for those rows.
++ england[ , ] : everything
++ england[row, ] : some rows and all columns for those rows.
++ england[ 1:5, ] : the first five rows plus their corresponding columns.
 4. By logical (the most important way)
++ england[ , c(FALSE,FALSE,TRUE,FALSE)] : Only give me the TRUE column (the third one)
++ england[,"result"] == "D" : Give me all the rows for the column "result". Present TRUE for the rows having a result of Draw. Otherwise, FALSE.
++ england[ england[,"result"] == "D" , ] : Just the rows of the england dataset where the result is a Draw. 
++ england[ england[,"result"] == "D" , "result" ] : Get a bunch of Ds.
+### What is Everton's average score at home and average score away?
+1. Finding games where Everton is the home team. 
+2. Finding the score column everytime Everton is the home team. 
+3. Taking the average of that vector. 
++ england[,"home"] == "Everton"
++ england[ england[,"home"] == "Everton" , "hgoal" ]
++ mean(england[ england[,"home"] == "Everton" , "hgoal" ])
 
