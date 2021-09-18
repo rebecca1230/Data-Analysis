@@ -61,4 +61,5 @@ class(our.matrix) = "matrix"
 our.matrix = as.data.frame(our.matrix)
 
 <<< The columns have names.
+
 class(our.matrix) = "data.frame"
