@@ -47,12 +47,9 @@
 1. 1 + 1 = 2
 2. "1" + "1" = Error
 ### Matrix 
-1. our.matrix = matrix(data = 1:25, nrow=5, ncol=5, byrow=TRUE)
-2. Left to right; 5 rows. 
-3. our.matrix = matrix(data = 1:25, nrow=5, ncol=5, byrow=FALSE)
-4. Up to down; 5 columns. 
-5. class(our.matrix) = "matrix" 
+1. our.matrix = matrix(data = 1:25, nrow=5, ncol=5, byrow=TRUE) Left to right; 5 rows. 
+3. our.matrix = matrix(data = 1:25, nrow=5, ncol=5, byrow=FALSE) Up to down; 5 columns. 
++ class(our.matrix) = "matrix" 
 
-1. our.matrix = as.data.frame(our.matrix)
-2. The columns have names.
-3. class(our.matrix) = "data.frame"
+1. our.matrix = as.data.frame(our.matrix) The columns have names.
++ class(our.matrix) = "data.frame"
