@@ -18,10 +18,10 @@
 2. c() : concatenate/combine function generates the same amount of things we provided to it. EX: c(1,2,3)
 3. rep(what we want to repeat, times of repetition) : Repeat function. The default repetition is 1. EX: rep(10,2) = 10 10 ; rep(10,3) = 10 10 10 
 4. seq(first value, last value) : Sequence function gives all the numbers between the firsst and last value. 
-EX:seq(2,5) = 2 3 4 5 /
-   seq(2,5) /
-   2:5 /
-   seq(2,5,by=1) /
+EX:seq(2,5) = 2 3 4 5 //
+   seq(2,5) //
+   2:5 //
+   seq(2,5,by=1) //
 
 6. seq(2, 5, by=0.5) = 2, 2.5, 3, 3.5, 4, 4.5, 5
 7. ?seq : asking the bottom-right block what this function is.
