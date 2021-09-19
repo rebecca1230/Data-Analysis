@@ -53,4 +53,20 @@ conf.int99 = function(x) {
 }
 conf.int99(x)
 ```
+## Combine functions 
+```
+confidence.interval = function(x, confidence) {
+     if(confidence == 0.90) {
+        out = conf.int90(x)
+     } else if(confidence == 0.95) {
+        out = conf.int95(x)
+     } else if(confidence == 0.99) {
+        out = conf.int99(x)
+     } else { 
+        print("CI can only be 0.90, 0.95, 0.99")
+     } 
+     return(out)
+}
 
+confidence.interval(x, confidence =0.99)
+```
