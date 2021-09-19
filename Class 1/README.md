@@ -1,4 +1,4 @@
-# Class 1 Part 1
+# Class 1 
 ## R Working Blocks
 1. < UP-LEFT > Script : Record and save what we type. 
 2. < BOTTOM-LEFT > Console/Terminal : Where we tell the computer to do stuff.
