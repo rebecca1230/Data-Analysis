@@ -26,3 +26,12 @@ sum(USArrests[, "UrbanPop"] > 60) (Total amount of TRUE)
 ```
 mean(USArrests[ USArrests[, "UrbanPop"] > 60 , "Assault" ])
 ```
+## Exercise 2
+1. dat = MASS::survey 
++ Looking within in the MASS library, find the object call survey and put it under the environment "dat".
+2. Take the first 4 rows: (a) dat[1:4,] (b) head(dat,n=4)
+3. Average pulse rate of the female students: 
+```
+mean(dat[ dat[, "sex"] == "Female" , "Pulse" ], na.rm = TRUE) 
+```
++ na.rm=TRUE ignores the N/A values. 
