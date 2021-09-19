@@ -19,7 +19,4 @@
 6. identical(c(1,2,3),c(1,2,3)) : Are the 1st value and 2nd value identical? = TRUE
 7. seq(6,15, by=1) < seq(2,20, by=2)
 8. & : TRUE&TRUE = TRUE / TRUE&FALSE = FALSE / FALSE&FALSE = FALSE (If any of them is FALSE, the whole thing is FALSE.)
-===========
-## Indexing 
-## English football
-## Data Visualization
+### Next lecture: (a)Indexing (b) English football (c) Data visualization
