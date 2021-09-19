@@ -11,6 +11,11 @@
 4. Texas's urban population: USArrests["Texas","UrbanPop"]
 5. rownames(USArrests) : Texas is at 43rd row.
 6. Sate with the highest murder rate: 
++ max(1,2,3) = 3
++ max(USArrests[, "Murder"])
+```
+USArrests[  USArrests [ , "Murder"] == max(USArrests[, "Murder"]) ,  ]
+```
 7. States with an UrbanPop greater than 60: 
 ```
 USArrests[, "UrbanPop"] > 60
