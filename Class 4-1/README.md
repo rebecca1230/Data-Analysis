@@ -38,11 +38,11 @@ hist(rnorm(n=500, mean=3, sd =1.5),
 *dev.off*
 
 ## Exercise 2: Function of Confidence Intervals 
-x = rnorm(n=500, mean =3, sd=1.5)
-library(plotrix) 
-plotrix::stderror
-mean(x) + 1.97 (asterisk) std.error(x)
-mean(x) - 1.97 (asterisk) std.error(x)
+1. x = rnorm(n=500, mean =3, sd=1.5)
+2. library(plotrix) 
+3. plotrix::stderror
+4. mean(x) + 1.97 (asterisk) std.error(x)
+5. mean(x) - 1.97 (asterisk) std.error(x)
 ```
 conf.int99 = function(x) {
     mean(x) + 2.5 (asterisk) std.error(x)
