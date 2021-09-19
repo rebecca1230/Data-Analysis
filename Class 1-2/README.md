@@ -1,4 +1,4 @@
-# Class 1 Part 2
+# Class 2 Part 2
 ## Install Packages
 1. < Script > install.packages("engsoccerdata")
 + Successfully downloaded packages
