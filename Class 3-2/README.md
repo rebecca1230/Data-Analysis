@@ -26,10 +26,17 @@ hist(x = dat[, "Wr.Hnd"],
 + y means the Frequency (number of values for each x)
 + breaks : the number of bars.
 
-6. mean(dat[, "Wr.Hnd"], na.rm=TRUE)
-7. Add average onto the plot: abline(v = mean(dat[, "Wr.Hnd"], na.rm=TRUE), lwd = 2, lty = "dashed", col = "grey")
+```
+mean(dat[, "Wr.Hnd"], na.rm=TRUE)
+```
+Add average onto the plot: 
+```
+abline(v = mean(dat[, "Wr.Hnd"], na.rm=TRUE), lwd = 2, lty = "dashed", col = "grey")
+```
 + v : vertical line
 + lwd : line width 
 + lty : line type
-8. 
+
+## Confidence Interval: Quantify the uncertainty about the true population
+
 
