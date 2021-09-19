@@ -1,5 +1,5 @@
 # Class 4 Part 1 
-## Plot
+## Exercise 1: Plot
 Plot 500 draws of a normal distribution with mean 3 sd 1.5. 
 ```
 rnorm(n=500, mean=3, sd =1.5)
@@ -34,5 +34,23 @@ hist(runif(n = 500,
 hist(rnorm(n=500, mean=3, sd =1.5), 
      xlab = "Normal Draws", 
      main = "500 Draws from a Normal(3, 1.5)")
+```
+*dev.off*
+
+## Exercise 2: Function of Confidence Intervals 
+x = rnorm(n=500, mean =3, sd=1.5)
+library(plotrix) 
+plotrix::stderror
+mean(x) + 1.97 (asterisk) std.error(x)
+mean(x) - 1.97 (asterisk) std.error(x)
+```
+conf.int99 = function(x) {
+    mean(x) + 2.5 (asterisk) std.error(x)
+    mean(x) - 2.5 (asterisk) std.error(x) 
+    conf.int = c(mean(x) + 2.5 (asterisk) std.error(x),
+                 mean(x) - 2.5 (asterisk) std.error(x))
+    return(conf.int)
+}
+conf.int99(x)
 ```
 
