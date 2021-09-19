@@ -41,7 +41,9 @@ abline(v = mean(dat[, "Wr.Hnd"], na.rm=TRUE), lwd = 2, lty = "dashed", col = "gr
 1. x = dat[, "Wr.Hnd"]
 2. sd(x, na.rm =TRUE)
 3. std.error(dat[, "Wr.Hnd"], na.rm =TRUE )
-4. mean(dat[, "Wr.Hnd"], na.rm =TRUE + 1.97 (asterisk) std.error(dat[, "Wr.Hnd"], na.rm =TRUE )
-5. mean(dat[, "Wr.Hnd"], na.rm =TRUE - 1.97 (asterisk) std.error(dat[, "Wr.Hnd"], na.rm =TRUE )
 
-
+Confidence Interval:
+```
+mean(dat[, "Wr.Hnd"], na.rm =TRUE + 1.97 (asterisk) std.error(dat[, "Wr.Hnd"], na.rm =TRUE )
+mean(dat[, "Wr.Hnd"], na.rm =TRUE - 1.97 (asterisk) std.error(dat[, "Wr.Hnd"], na.rm =TRUE )
+```
