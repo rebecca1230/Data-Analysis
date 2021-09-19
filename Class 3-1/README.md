@@ -14,11 +14,13 @@
 + max(1,2,3) = 3
 + max(USArrests[, "Murder"])
 ```
-USArrests[  USArrests [ , "Murder"] == max(USArrests[, "Murder"]) ,  ]
+rownames(USArrests[  USArrests [ , "Murder"] == max(USArrests[, "Murder"]) ,  ])
 ```
 7. States with an UrbanPop greater than 60: 
 ```
-USArrests[, "UrbanPop"] > 60
+USArrests[, "UrbanPop"] > 60 (Gives TRUE & FALSE)
+USArrests[USArrests[, "UrbanPop"] > 60 , ] (Gives the rows having that TRUE)
+sum(USArrests[, "UrbanPop"] > 60) (Total amount of TRUE)
 ```
 8. Average assault rate for those States: 
 ```
