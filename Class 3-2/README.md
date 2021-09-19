@@ -38,5 +38,7 @@ abline(v = mean(dat[, "Wr.Hnd"], na.rm=TRUE), lwd = 2, lty = "dashed", col = "gr
 + lty : line type
 
 ## Confidence Interval: Quantify the uncertainty about the true population
-
+1. x = dat[, "Wr.Hnd"]
+2. sd(x, na.rm =TRUE)
+3. 
 
