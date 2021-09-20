@@ -1,4 +1,5 @@
 # Class 4 Part 2 : Hypothesis Testing
+## Section 1
 1. quantile
 2. quantile(x=draws,probs=c(0.25, 0.5, 0.75), na.rm)
 + probs is a sequence from 0 to 1 every 2.5
@@ -38,5 +39,35 @@ abline(v = quantile(x = draws2, probs = c(0.025, 0.975)),
        lwd = 2, lty = "dashed",
        col = "grey")
 ```
+Compare Histograms draw & draw2
+```
+par(mfrow = c(2,1))
 
+draws = rnorm(1000, mean = 0, sd =1)
+hist(draws,
+     xlin = c(-5,5))
+abline(v = quantile(x = draws, probs = c(0.25, 0.5, 0.75)),
+       lwd = 2, lty = "dashed",
+       col = "black")
+abline(v = quantile(x = draws, probs = c(0.025, 0.975)),
+       lwd = 2, lty = "dashed",
+       col = "grey")
 
+draws2 = rnorm(1000, mean = 0.5, sd = 1)
+hist(draws2)
+abline(v = quantile(x = draws2, probs = c(0.25, 0.5, 0.75)),
+       lwd = 2, lty = "dashed",
+       col = "black")
+abline(v = quantile(x = draws2, probs = c(0.025, 0.975)),
+       lwd = 2, lty = "dashed",
+       col = "grey")
+```
++ xlin = c(-5,5) : Make x axis wider. x value range (-5,5)
+
+## Section 2
+1. Are these different distribution and data? 
+2. Null : no difference  
+3. Alternative : is a difference
+```
+```
+4. 
