@@ -68,6 +68,27 @@ abline(v = quantile(x = draws2, probs = c(0.025, 0.975)),
 1. Are these different distribution and data? 
 2. Null : no difference  
 3. Alternative : is a difference
+
+Copy the CI function from Class 4-1: 
 ```
+confidence.interval = function(x, confidence) {
+     if(confidence == 0.90) {
+        out = conf.int90(x)
+     } else if(confidence == 0.95) {
+        out = conf.int95(x)
+     } else if(confidence == 0.99) {
+        out = conf.int99(x)
+     } else { 
+        print("CI can only be 0.90, 0.95, 0.99")
+        out = NA
+     } 
+     return(out)
+}
 ```
+How uncertain are we that the averages are actually different?
+```
+confint_draws1 = confidence.interval(x = draws, confidence = 0.95)
+confint_draws2 = confidence.interval(x = darws2, confidence = 0.95)
+```
+
 4. 
