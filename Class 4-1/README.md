@@ -43,15 +43,41 @@ hist(rnorm(n=500, mean=3, sd =1.5),
 3. plotrix::stderror
 4. mean(x) + 1.97 (asterisk) std.error(x)
 5. mean(x) - 1.97 (asterisk) std.error(x)
+
+CI 99
 ```
 conf.int99 = function(x) {
-    mean(x) + 2.5 (asterisk) std.error(x)
-    mean(x) - 2.5 (asterisk) std.error(x) 
-    conf.int = c(mean(x) + 2.5 (asterisk) std.error(x),
-                 mean(x) - 2.5 (asterisk) std.error(x))
-    return(conf.int)
+  mean(x) + 2.5 * std.error(x)
+  mean(x) - 2.5 * std.error(x) 
+  conf.int = c(mean(x) + 2.5 * std.error(x),
+               mean(x) - 2.5 * std.error(x))
+  return(conf.int)
 }
 conf.int99(x)
+```
+
+CI 95
+```
+conf.int95 = function(x) {
+  mean(x) + 1.97 * std.error(x)
+  mean(x) - 1.97 * std.error(x) 
+  conf.int = c(mean(x) + 1.97 * std.error(x),
+               mean(x) - 1.96 * std.error(x))
+  return(conf.int)
+}
+conf.int95(x)
+```
+
+CI 90
+```
+conf.int90 = function(x) {
+  mean(x) + 1.645 * std.error(x)
+  mean(x) - 1.645 * std.error(x) 
+  conf.int = c(mean(x) + 1.645 * std.error(x),
+               mean(x) - 1.645 * std.error(x))
+  return(conf.int)
+}
+conf.int90(x)
 ```
 ## Combine functions 
 ```
