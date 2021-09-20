@@ -69,8 +69,35 @@ abline(v = quantile(x = draws2, probs = c(0.025, 0.975)),
 2. Null : no difference  
 3. Alternative : is a difference
 
-Copy the CI function from Class 4-1: 
+Copy the CI functions from Class 4-1: 
 ```
+conf.int99 = function(x) {
+  mean(x) + 2.5 * std.error(x)
+  mean(x) - 2.5 * std.error(x) 
+  conf.int = c(mean(x) + 2.5 * std.error(x),
+               mean(x) - 2.5 * std.error(x))
+  return(conf.int)
+}
+conf.int99(x)
+
+conf.int95 = function(x) {
+  mean(x) + 1.97 * std.error(x)
+  mean(x) - 1.97 * std.error(x) 
+  conf.int = c(mean(x) + 1.97 * std.error(x),
+               mean(x) - 1.96 * std.error(x))
+  return(conf.int)
+}
+conf.int95(x)
+
+conf.int90 = function(x) {
+  mean(x) + 1.645 * std.error(x)
+  mean(x) - 1.645 * std.error(x) 
+  conf.int = c(mean(x) + 1.645 * std.error(x),
+               mean(x) - 1.645 * std.error(x))
+  return(conf.int)
+}
+conf.int90(x)
+
 confidence.interval = function(x, confidence) {
      if(confidence == 0.90) {
         out = conf.int90(x)
@@ -86,9 +113,42 @@ confidence.interval = function(x, confidence) {
 }
 ```
 How uncertain are we that the averages are actually different?
+Get CI first: 
 ```
 confint_draws1 = confidence.interval(x = draws, confidence = 0.95)
-confint_draws2 = confidence.interval(x = darws2, confidence = 0.95)
+confint_draws2 = confidence.interval(x = draws2, confidence = 0.95)
+confint_draws1
+confint_draws2
 ```
+Drawing the CIs onto the two Histograms:
+```
+par(mfrow = c(2,1))
+hist(draws, xlim = c(-1,1))
+abline (v = confint_draws1, 
+        lwd = 2, col = "red")
+hist(draws2, xlim = c(-1,1))
+abline (v = confint_draws2, 
+        lwd = 2, col = "red")
+```
++ We see a significant statistical difference. No overlap of 95% CI for the two graphs. 
 
-4. 
+## Section 3 
+1. Make draw and draws Histograms the same. 
+*Go back to Section 1: "Compare Histograms draw & draw2" and change mean of draws2 from 0.5 to 0* 
+```
+draws = rnorm(1000, mean = 0, sd =1)
+draws2 = rnorm(1000, mean = 0, sd =1)
+```
+2. Run the Analysis of whether 95% CI overlapps
+```
+confint_draws1 = confidence.interval(x = draws, confidence = 0.95)
+confint_draws2 = confidence.interval(x = draws2, confidence = 0.95)
+````
++ Do overlap. 
+
+### Make the data easier to read
+Reduce the number of draws creates wider CI better for observe: 
+```
+draws = rnorm(100, mean = 0, sd =1)
+draws2 = rnorm(100, mean = 0.1, sd =1)
+```
