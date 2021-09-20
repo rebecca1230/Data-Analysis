@@ -64,6 +64,7 @@ confidence.interval = function(x, confidence) {
         out = conf.int99(x)
      } else { 
         print("CI can only be 0.90, 0.95, 0.99")
+        out = NA
      } 
      return(out)
 }
