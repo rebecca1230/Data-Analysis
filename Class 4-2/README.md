@@ -27,7 +27,7 @@ abline(v = quantile(x = draws, probs = c(0.025, 0.975)),
        lwd = 2, lty = "dashed",
        col = "grey")
 ```
-Draw2 Histogram
+Draw2 Histogram (mean changes from 0 to 0.5)
 ```
 draws2 = rnorm(1000, mean = 0.5, sd = 1)
 hist(draws2)
@@ -37,3 +37,6 @@ abline(v = quantile(x = draws2, probs = c(0.25, 0.5, 0.75)),
 abline(v = quantile(x = draws2, probs = c(0.025, 0.975)),
        lwd = 2, lty = "dashed",
        col = "grey")
+```
+
+
