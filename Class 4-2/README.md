@@ -8,14 +8,14 @@ Draw histogram:
 draws = rnorm(1000, mean = 0, sd =1)
 hist(draws)
 ```
-Quartile function:
+Quantile function:
 ```
 quantile(x = draws, probs = 0.5)
 (Get Median: The number at which 50% of the population is above and below that value.)
 quantile(x = draws, probs = c(0.25, 0.5, 0.75))
 (Get Median / Upper-quartile / Lower-quartile)
 ```
-Add the quartils as vertical lines:
+Add the quantile as vertical lines:
 ```
 abline(v = quantile(x = draws, probs = c(0.25, 0.5, 0.75)),
        lwd = 2, lty = "dashed",
