@@ -152,3 +152,25 @@ Reduce the number of draws creates wider CI better for observe:
 draws = rnorm(100, mean = 0, sd =1)
 draws2 = rnorm(100, mean = 0.1, sd =1)
 ```
+## Section 4: Simply our method
+Use the difference of the histograms to check:
+```
+difs = draws - draws2
+hist(difs, xlim = c(-5,5), breaks = 10) 
+abline(v = confidence.interval(difs, 0.95), lwd = 2)
+```
++ Take the histogram of dif 
++ Clear the previous histogram with dev.off() in console
++ Conclude CI overlaps or not. 
+
+### Section 5: t test 
+t.test(x = draws, y = draws2)
++ y does not need to exist. 
++ If y does not exist, it is assumed that we are comparing x and 0.
++ Welch Two Sample t-test: Provided both x & y.
++ **Chances of there is no difference (null hypothesis is true) gets lower as p-value gets smaller. ** 
++ **A p-value < 0.05 rejects the null hypothesis (the idea of no difference gets rejected). **
+
+## Notes
+1. dev.off() : Clear. 
+2. *breaks*
