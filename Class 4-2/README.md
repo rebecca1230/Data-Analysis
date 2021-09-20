@@ -134,7 +134,7 @@ abline (v = confint_draws2,
 
 ## Section 3 
 1. Make draw and draws Histograms the same. 
-*Go back to Section 1: "Compare Histograms draw & draw2" and change mean of draws2 from 0.5 to 0* 
++ *Go back to Section 1: "Compare Histograms draw & draw2" and change mean of draws2 from 0.5 to 0* 
 ```
 draws = rnorm(1000, mean = 0, sd =1)
 draws2 = rnorm(1000, mean = 0, sd =1)
