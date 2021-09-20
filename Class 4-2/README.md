@@ -164,14 +164,14 @@ abline(v = confidence.interval(difs, 0.95), lwd = 2)
 + Conclude CI overlaps or not. 
 
 ## Section 5: t-test 
-### 2 Sample t-test
+### Two Sample t-test
 t.test(x = draws, y = draws2)
 + y does not need to exist. 
 + If y does not exist, it is assumed that we are comparing x and 0.
 + Welch Two Sample t-test: Provided both x & y.
 + **Chances of there is no difference (null hypothesis is true) gets lower as p-value gets smaller. ** 
 + **A p-value < 0.05 rejects the null hypothesis (the idea of no difference gets rejected). **
-### 1 Sample t-test
+### One Sample t-test
 ```
 t.test(x=difs)
 ```
