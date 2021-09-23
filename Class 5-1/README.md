@@ -70,5 +70,13 @@ t.test(x = england$hgoal[england$home == "Arsenal" ] ,
 + CI overlpas 0 ; can not reject the null hypothesis. 
 + It is possible that there is no difference. 
 
+### Summary, Table, Round
+1. summary(engalnd$home) : home (charcater vector) Shows how many times each character appears.
+2. summary(engalnd$hgoal) : hgoal (numeric vector) Shwos statistics values.
+3. table(engalnd$home) : Get results similar to summary()
+4. table(engalnd$hgoal) : Shows how many times each value appears. 
+5. table(engalnd$hgoal)/nrow(rngalnd): Gives proportions. 
+6. round(table(engalnd$hgoal)/nrow(rngalnd), 3) : Round numbers down. 3 signify the number of digits after "." 小數點。 
+
 # Notes & Questions 
 1. Why is that CI has to be away from 0 ?
