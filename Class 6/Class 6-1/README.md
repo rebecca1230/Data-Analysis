@@ -30,8 +30,34 @@ sum(x[x %% 3 == 0 | x %% 5 == 0])
 ```
 + We get the same result as using the for loop.
 
-## Note
+## Types of Data
+1. Binary (zero OR 1)
+```
+rbinom(1000, 1, 0.5)
+```
+2. Categorical
+```
+sample(1:5, 10, replace = F)
+sample(c("blonde", "brunette", "redhead", "rainbow"), 10, replace = T)
+```
++ Gets a vector of 10 random head colors.
+
+3. Ordinal
+
+4. Continuous 
+runif(100)
+rnorm()
++ pi is a continuous number
+
+5. Count 
+rbinom(1000, 5, 0.5)
+hist(rpois(100,1))
++ Continuous numbers in integers.
+
+## Note & Questions
 1. TRUE | FALSE | FALSE | FALSE = TRUE
 2. TRUE & FALSE & FALSE & FALSE = FALSE
 3. for loops in R can be slow ; R prefers vector.
+4. With continuous & Count numbers, we can make comparisons.
+5. What is replace for? 
 
