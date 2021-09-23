@@ -28,7 +28,7 @@ x[x %% 3 == 0 | x %% 5 == 0]
 ```
 sum(x[x %% 3 == 0 | x %% 5 == 0])
 ```
-+ Same result as using the for loop.
++ We get the same result as using the for loop.
 
 ## Note
 1. TRUE | FALSE | FALSE | FALSE = TRUE
