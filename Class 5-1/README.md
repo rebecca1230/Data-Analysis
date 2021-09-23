@@ -16,4 +16,16 @@ data("england")
 head(england)
 ```
 ### Run a t-test
-1. 
+```
+england[ "Arsenal" , "home" ] : Arsenal's performance when it's home.
+england[,"home"] EQUALS TO england$home
+england$hgoal[england$home == "Arsenal"]
+```
+engalnd$hgoal is a vector and not data frame ; subset it with a logical vector.
+This works only cuz the length of the logical vector is the same as the hgoals.
+```
+x = c(1,2,3)
+x[c(TRUE, TRUE, FALSE)]
+```
++ Run the above and get 1,2
+
