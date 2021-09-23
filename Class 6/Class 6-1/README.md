@@ -1,6 +1,6 @@
 # Class 6 Part 1: Regression
 
-## Math
+## Computational Question
 If we list all the whole positive numbers below 10 that are mutiples of 3 or 5, we get 3,5,6,9. The sum of these mutiples is 23. 
 ### [1] Find the sum of all the mutiples of 3 or 5 below 1000.
 ```
