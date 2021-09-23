@@ -1,13 +1,13 @@
 # Class 6 Part 1: Regression
 ## Math
 If we list all the whole positive numbers below 10 that are mutiples of 3 or 5, we get 3,5,6,9. The sum of these mutiples is 23. 
-Find the sum of all the mutiples of 3 or 5 below 1000.
+[QUESTION] Find the sum of all the mutiples of 3 or 5 below 1000.
 ```
 10 %% 3 
 ```
 + %% gets us the remainder. 
 
-If a value is a multiple of 3 or 5, meaning 10 %% 3 == 0 OR 10 %% 5 == 0, then add the value to the list "out"
+[1] If a value is a multiple of 3 or 5, meaning 10 %% 3 == 0 OR 10 %% 5 == 0, then add the value to the list "out"
 ```
 x = 1: 999
 out = c()
@@ -19,8 +19,7 @@ for( i in 1:length(x) ) {
 }
 sum(out)
 ```
-
-Make the above into one line of code: 
+[2] Make the above into one line of code: 
 ```
 x[x %% 3 == 0 | x %% 5 == 0]
 ```
