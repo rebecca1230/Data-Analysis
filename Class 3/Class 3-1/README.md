@@ -1,4 +1,4 @@
-# Class 3 Part 1
+ # Class 3 Part 1
 ## The difference between bracket notations
 1. () Functions 
 2. [] Subsetting
@@ -34,4 +34,4 @@ mean(USArrests[ USArrests[, "UrbanPop"] > 60 , "Assault" ])
 ```
 mean(dat[ dat[, "sex"] == "Female" , "Pulse" ], na.rm = TRUE) 
 ```
-+ na.rm=TRUE ignores the N/A values. 
++ na.rm=TRUE ignores the N/A values.
