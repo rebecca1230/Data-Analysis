@@ -10,27 +10,27 @@
 7. Getting 100% and getting 0% on a multiple choice test both means we might know all the answer. 
 
 ## Bionmial Distribution of testing
-[A] Taste one cup of tea (n = 1 / draw = 1) from the given 8 cups (size = 8). 
+[1] Taste one cup of tea (n = 1 / draw = 1) from the given 8 cups (size = 8). 
 ```
 rbinom( n = 1, size = 8, prob = 0.5)
 ```
 + Outcome of this code is one value that is between 0 & 8.
-+ Distribution of the numbers of tea she'll get right under the null hypothesis (no ability). 
++ All together shows the distribution of the numbers of tea she'll get right under the null hypothesis (no ability). 
 
-[B] Let her taste the tea for 1000 times:
+[2] Let her taste the tea for 1000 times:
 ```
 rbinom( n = 1000, size = 8, prob = 0.5)
 
 ```
-[C] See what the distribution is like under histogram: 
+[3] See what the distribution is like under histogram: 
 ```
 hist(rbinom( n = 1000, size = 8, prob = 0.5))
 ```
-[D] The number of times she'll get 0,1,2,3,4,5,6,7,8 cups right in the 1000 times:
+[4] The number of times she'll get 0,1,2,3,4,5,6,7,8 cups right in the 1000 times:
 ```
 table(rbinom( n = 1000, size = 8, prob = 0.5))
 ```
-[E] In 95% of the times we test her, what is the number that she'll get it right?
+[5] In 95% of the times we test her, what is the number that she'll get it right?
 ```
 tests = rbinom( n = 1000, size = 8, prob = 0.5)
 quantile(tests, probs = c(0.025, 0.975))
@@ -40,7 +40,7 @@ quantile(tests, probs = c(0.025, 0.975))
 + ANSWER: 8, if we are looking for 95% CI, since 8 is outside of the 95% CI. 
 + In other words, she has to get all correct. 
 
-[F] What if we increase the size by 2? 
+[6] What if we increase the size by 2? 
 ```
 tests = rbinom( n = 1000, size = 10, prob = 0.5)
 quantile(tests, probs = c(0.025, 0.975))
@@ -48,7 +48,7 @@ quantile(tests, probs = c(0.025, 0.975))
 + She needs 9 or 10 correct for us to reject the null.
 + In other words, she does not need to get all correct. She can make one mistake. 
 
-[G] Rather than having the null hypothesis to be she's guessing 50% 50%, let's change the null hypothesis to "she can get 60% or fewer of the time."
+[7] Rather than having the null hypothesis to be she's guessing 50% 50%, let's change the null hypothesis to "she can get 60% or fewer of the time."
 ```
 tests = rbinom( n = 1000, size = 10, prob = 0.6)
 quantile(tests, probs = c(0.025, 0.975))
