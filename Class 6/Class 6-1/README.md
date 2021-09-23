@@ -29,7 +29,7 @@ x[x %% 3 == 0 | x %% 5 == 0]
 ```
 sum(x[x %% 3 == 0 | x %% 5 == 0])
 ```
-+ We get the same result as using the for loop.
++ Sum up all values, we get the same result as using the for loop.
 
 ## Types of Data
 1. Binary (zero OR 1)
