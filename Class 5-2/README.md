@@ -53,7 +53,7 @@ quantile(tests, probs = c(0.025, 0.975))
 tests = rbinom( n = 1000, size = 10, prob = 0.6)
 quantile(tests, probs = c(0.025, 0.975))
 ```
-+ She needs to get it all right for us to say she could get it correct 60% of the time. 
++ We can conclude that she needs to get it all right for us to say she could get it correct 60% of the time. 
 
 # Notes & Question
 1. Why 100% and 0% both means we know the answer ? 
