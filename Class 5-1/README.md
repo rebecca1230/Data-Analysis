@@ -15,7 +15,7 @@ library(engsoccerdata)
 data("england")
 head(england)
 ```
-
+### Using the dollar sign
 england[ "the rows of which the home column is Arsenal" , "display column hgoal" ]
 ```
 england[england[,"home"]== "Arsenal" , "hgoal"]
