@@ -19,7 +19,7 @@ abline(a = 100,
 ```
 ### Find a & b
 ```
-lm(data,formula tell R what de/in are)
+lm(data,formula = tell R what dependent and independent variables are)
 
 lm(data = USArrests, 
    formula = "Assault ~ UrbanPop")
@@ -29,7 +29,7 @@ lm(data = USArrests,
 ```
 + Run the code and we get: 
 + (1) Call: lm(formula, data). Call changes the argument order.
-+ (2) Coefficients: a = Intercept / b = UrbanPop
++ (2) Coefficients: a = Intercept ; b = UrbanPop
 
 ### Draw the line of best fit 
 For Assault and Murder:
