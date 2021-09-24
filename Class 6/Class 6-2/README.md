@@ -90,5 +90,4 @@ m = lm(data = USArrests,
 + curve()
 
 ## Note & Question
-1. cex is size. 
-2. I have a different plot. 
+1. cex is size.  
