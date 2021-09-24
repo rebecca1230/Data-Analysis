@@ -58,6 +58,21 @@ Predict Assault rates when Murder rates are 0,10,100:
 ```
 predict(m, data.frame(Murder = c(0, 10, 100)))
 ```
+### Muti-variable Regression
+```
+m = lm(data = USArrests, 
+   formula = " Murder ~ Assault + UrbanPop ")
+               [y axis] ~ [x axis] + [z axis]
+summary(m)
+```
++ y = bx + a
++ y = bi* Assault + b2* UrbanPop + a 
++ y = [x axis] + [z axis] + a 
++ After running the code summary(m):
++ Assault has + coefficient ; UrbanPop has - coefficient
++ Two cities with same Assault rate, the one with lower UrbanPop will have slightly higher Murder rate (negative relationship).
++ Increase Assault rate by 1, then we are increasing the Murder rate by 0.043910. 
++ Increase the independent variable by 1, holding other indepedent variables constant, then the dependent variable will be increased by the estimate value.  
 
 
 ## Note & Question
