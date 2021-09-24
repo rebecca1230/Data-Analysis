@@ -62,6 +62,7 @@ predict(m, data.frame(Murder = c(0, 10, 100)))
 ```
 m = lm(data = USArrests, 
    formula = " Murder ~ Assault + UrbanPop ")
+
                [y axis] ~ [x axis] + [z axis]
 summary(m)
 ```
@@ -69,15 +70,24 @@ summary(m)
 + y = bi* Assault + b2* UrbanPop + a 
 + y = [x axis] + [z axis] + a 
 + After running the code summary(m):
-+ Assault has + coefficient ; UrbanPop has - coefficient
++ Assault has (+) coefficient ; UrbanPop has (-) coefficient
 + Two cities with same Assault rate, the one with lower UrbanPop will have slightly higher Murder rate (negative relationship).
 + Increase Assault rate by 1, then we are increasing the Murder rate by 0.043910. 
 + Increase the independent variable by 1, holding other indepedent variables constant, then the dependent variable will be increased by the estimate value.  
 
 Best guess for the Murder rate when A & U are the following: 
 ```
-predict(m, data.frame(Assault = 100, UrbanPop = 2))
+predict(m, data.frame(Assault = 100, UrbanPop = 20))
 ```
+
++ Future lectures: How wrong do we think our guess is likely to be? 
+
+```
+m = lm(data = USArrests, 
+    formula = " Assault ~ I(Murder^2) ")
+```
+
++ curve()
 
 ## Note & Question
 1. cex is size. 
