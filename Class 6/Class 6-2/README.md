@@ -45,7 +45,7 @@ abline(a = 51.27,
 3. Murder = 10 
 4. 15.34 * 10 + 51.27 = Assault rate is 204.67
 
-Get summary: 
+1. Get summary: 
 ```
 m = lm(data = USArrests, 
    formula = "Assault ~ Murder")
@@ -54,7 +54,7 @@ summary(m)
 + Residuals is the distance from points to the line of best fit. 
 + Default null hypothesis is b = 0.
 
-Predict Assault rates when Murder rates are 0,10,100: 
+2. Predict Assault rates when Murder rates are 0,10,100: 
 ```
 predict(m, data.frame(Murder = c(0, 10, 100)))
 ```
