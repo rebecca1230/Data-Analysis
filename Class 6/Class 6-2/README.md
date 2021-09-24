@@ -74,6 +74,10 @@ summary(m)
 + Increase Assault rate by 1, then we are increasing the Murder rate by 0.043910. 
 + Increase the independent variable by 1, holding other indepedent variables constant, then the dependent variable will be increased by the estimate value.  
 
+Best guess for the Murder rate when A & U are the following: 
+```
+predict(m, data.frame(Assault = 100, UrbanPop = 2))
+```
 
 ## Note & Question
 1. cex is size. 
