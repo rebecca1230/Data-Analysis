@@ -34,14 +34,14 @@ dat %>% function() %>% function()
 7. desc() : Reorder by desceding. (Reverse order)
 + There are tidyverse cheat sheets avaiable. 
 
-## Q1: All flights originating in JFK:
+### Q1: All flights originating in JFK:
 ```
 nrow(dat[dat$origin == "JFK",])
 ---------------------tidyverse-----------------------
 dat %>% filter(origin == "JFK)
 
 ```
-## Q2: The departure delay time of all flights by United Airlines(UA):
+### Q2: The departure delay time of all flights by United Airlines(UA):
 ```
 dat$dep_delay[dat$carrier == "UA"]
 dat[dat$carrier == "UA", "dep_delay"]
@@ -50,7 +50,7 @@ dat %>%
   filter(carrier == "UA") %>% 
   select(dep_delay)
 ```
-## Q3: The average delay of all flights from Newark and JFK together: 
+### Q3: The average delay of all flights from Newark and JFK together: 
 ```
 mean(dat$dep_delay[dat$origin == "EWR" | dat$origin == "JFK"], na.rm=T)
 
@@ -66,13 +66,13 @@ dat %>%
 + EQUALS 
 + dat$origin == "EWR" | dat$origin == "JFK"
 
-## Q4: The average delay of all flights from EWR, JFK ... individually: 
+### Q4: The average delay of all flights from EWR, JFK ... individually: 
 ```
 avg_delay_data = dat %>% 
   group_by(origin) %>%
   summarize(ave_delay = mean(dep_delay, na.rm =T ))
 ```
-## Q5: Calculate the speed of all flights and order by speed:
+### Q5: Calculate the speed of all flights and order by speed:
 ```
 dat$speed = dat$distance/dat$air_time
 dat[order(dat$speed),]
@@ -82,7 +82,7 @@ flight_speed = dat %>%
   dplyr::arrange(desc(speed))
 view(flight_speed)
 ```
-## Q6: Keep only the variables year through tailnum 
+### Q6: Keep only the variables year through tailnum 
 ```
 dat[,1:12]
 tailnum_id = which(colnames(dat) == "tailnum")
