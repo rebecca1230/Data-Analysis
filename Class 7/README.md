@@ -1,4 +1,4 @@
-# CLass 7
+# Class 7
 
 ## Math Problem
 1. (1^2 + 2^2 + ... + 10^2) = 385
@@ -91,6 +91,14 @@ dat[, 1:tailnum_id]
 dat %>%
   select(year:tailnum)
 ```
+
+## engsoccerdata [32:41]
+
+### Q1: Which team has the highest total number of home goals scored? Hint: group_by, arrange
+### Q2: Which team has the highest total number of goals allowed at home? 
+### Q3: How many games has each team played as the home team ? Hint: n()
+
++ Next lecture: Regression Part 2
 
 ## Notes & Questions
 1. mean does not work in Q3. 
