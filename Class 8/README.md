@@ -1,9 +1,10 @@
 # Class 8 Part 1
 
 ## Fibonacci sequence:
-1,2 (1+2=3) (2+3=5) (3+5=8) ...
-1,2,3,5,8,13,21,34,55,89
-Find the sum of even-value terms within 4 million.
+
+1. 1,2 (1+2=3) (2+3=5) (3+5=8) ...
+2. 1,2,3,5,8,13,21,34,55,89
+3. Find the sum of even-value terms within 4 million.
 
 ### 1. Generate a Fibonacci sequence
 
