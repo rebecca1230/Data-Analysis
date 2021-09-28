@@ -26,7 +26,7 @@ Facebook:
 2. How does democracy and GDP interact in generating civil wars? 
 3. Hypothesize: In the poor countries, democracy does not reduce civil war. In the rich countries, democracy helps a lot in preventing civil war. 
 
-Fake data set
+[A] Fake data set
 ```
 set.seed(12345)
 lgdp = runif(1000) * 3 + 7 
@@ -39,7 +39,7 @@ cor(democ,lgdp)
 + runif(1000) * lgdp/10 : Richer countries are more likely to be democracies.
 + 0.5 : the bar for determining whether democray or not. > 0.5 is a democ ; < 0.5 is not a democ
 
-Estimate each countries' hidden propability for civil war. 
+[B] Estimate each countries' hidden propability for civil war. 
 ```
 prob = 0 + -0.1 * lgdp + 3.2 * democ + -0.4 * lgdp * democ + rnorm(1000)
 ```
@@ -52,3 +52,4 @@ prob = 0 + -0.1 * lgdp + 3.2 * democ + -0.4 * lgdp * democ + rnorm(1000)
 ```
 civwar = prob > 0
 ```
+[20:00]
