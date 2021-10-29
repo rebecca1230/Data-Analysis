@@ -9,7 +9,7 @@ data(lalonde)
 3. Independent variable: treat(job training program)
 4. Does the job training program increase real earning ?
 
-Evaluate the impact of millions of government's money:
+(Linear Regression) Evaluate the impact of millions of government's money:
 ```
 summary(lm(re78 ~ treat, data = lalonde))
 ```
