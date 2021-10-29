@@ -1,13 +1,13 @@
 # Match it and Covariant balance
 
-1. library(MatchIt)
-2. library(tidyverse)
-3. data(lalonde)
----------------------------------
-4. re78 is Real Earnings in 1978.
-5. Outcome(Dependent variable): How much money(real dollars) did the respondents earn in 1978? 
-6. Independent variable: treat(job training program)
-7. Does the job training program increase real earning ?
+library(MatchIt) \
+library(tidyverse) \
+data(lalonde)
+-------------
+1. re78 is Real Earnings in 1978.
+2. Outcome(Dependent variable): How much money(real dollars) did the respondents earn in 1978? 
+3. Independent variable: treat(job training program)
+4. Does the job training program increase real earning ?
 
 Evaluate the impact of millions of government's money:
 ```
