@@ -38,3 +38,6 @@ summary(lm(re78 ~ treat + age + nodegree + married + educ + re4 + re5, data = la
 ```
 + When we control for other factors, we observe that there is a positive relationship between re78 and treat. 
 
+```
+
+```
