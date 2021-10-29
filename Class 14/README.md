@@ -3,7 +3,7 @@
 library(MatchIt) \
 library(tidyverse) \
 data(lalonde)
--------------
+
 1. re78 is Real Earnings in 1978.
 2. Outcome(Dependent variable): How much money(real dollars) did the respondents earn in 1978? 
 3. Independent variable: treat(job training program)
