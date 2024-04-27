@@ -1,0 +1,16 @@
+stargazer(m0, m1, m2, m3, type="latex",
+          dep.var.labels = c('Net Income','Earnings Per Share', 'Revenue Growth','Debt to Equity Ratio'),
+          covariate.labels = 'Shared Value Level',
+          title='Models on Causality Between CSV and Profitability',
+          omit.stat = c('rsq','ser','f'),
+          style='ajps',
+          notes = 'good',
+          header = FALSE)
+
+stargazer(m4, m5, m6, type="latex",
+          dep.var.labels = c('Current Ratio','Free Cash Flow Yield','Price to Equity Ratio'),
+          covariate.labels = 'Shared Value Level',
+          title='Models on Causality Between CSV and Profitability',
+          omit.stat = c('rsq','ser','f'),
+          style='ajps',
+          header = FALSE)
